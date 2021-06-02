@@ -9,14 +9,76 @@
  * If you don't know what an iffe is, don't worry about it :)
  *
  * This file is for defining the following functions. See README.md for more detail.
- * isTrue
- * isFalse
- * not
- * addOne
- * isEven
- * isIdentical
- * isEqual
- * or
- * and
- * concat
+ * isTrue -
+ * isFalse -
+ * not -
+ * addOne -
+ * isEven -
+ * isIdentical -
+ * isEqual -
+ * or -
+ * and -
+ * concat -
  */
+//
+
+function isTrue(value) {
+    return (value === true);
+}
+//
+
+function isFalse(value) {
+    return (value === false);
+}
+//
+
+function not(value) {
+   return !value
+}
+//
+
+function addOne(value) {
+        return (++value);
+}
+//
+
+function isEven(value) {
+    if (value % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//Single line example for isEven
+// return (parseFloat(input) % 2) === 0;
+//
+
+function isIdentical(value1, value2) {
+    if (value1 === value2) {
+        return true;
+    } else {
+        return false;
+    }
+}
+//
+
+function isEqual(value1, value2) {
+    return (value1 == value2)
+}
+//
+
+function or(value1, value2) {
+    return (value1 || value2);
+}
+//
+
+function and(value1, value2) {
+    return (value1 && value2);
+}
+//
+
+function concat(value1, value2) {
+    return ("" + value1 + value2);
+}
+
+
